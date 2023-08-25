@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class BALLS : MonoBehaviour
 {
+    
     public float movementSpeed;
     public Vector3 direction;
     public float maxXPosition;
 
+
     void Update()
     {
         Move();
+        CheckBoundries();
     }
 
     void Move()
@@ -25,7 +28,11 @@ public class BALLS : MonoBehaviour
 
     public void CheckBoundries()
     {
-
+        if(transform.position.x > maxXPosition || transform.position.x < -maxXPosition) 
+        {
+            BallSpawner.Instance.SpawnBall();
+            Destroy(gameObject);
+        }
     }
 
 }

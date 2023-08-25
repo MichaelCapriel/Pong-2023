@@ -36,7 +36,8 @@ public class Paddle : MonoBehaviour
     {
         if(collision.gameObject.GetComponent<BALLS>())
         {
-            Vector3 hitDirection = new Vector3(ballHitXDirection, 0, 0);
+            float yHitDirection = (collision.transform.position.y - transform.position.y);
+            Vector3 hitDirection = new Vector3(ballHitXDirection, yHitDirection, 0);
             collision.gameObject.GetComponent<BALLS>().Bounce(hitDirection);
         }
     }
