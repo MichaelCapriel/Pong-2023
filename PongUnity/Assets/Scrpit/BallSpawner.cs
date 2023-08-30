@@ -34,7 +34,7 @@ public class BallSpawner : MonoBehaviour
     public void SpawnBall()
     {
         currentBall = Instantiate(ballPreFab, spawnPosition.position, transform.rotation, null);
-        float randX = Random.Range(-1.5f, 1.5f);
+        float randX = Random.Range(0, 2) * 2 - 1;
         float randY = Random.Range(-1.5f, 1.5f);
         Vector3 newDrection = new Vector3(randX, randY, 0);
     
