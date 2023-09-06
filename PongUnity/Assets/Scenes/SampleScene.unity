@@ -582,7 +582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdec48e2299a91947b80d838fcd32244, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  verticalMovementSpeed: 10
+  verticalMovementSpeed: 6
   maxYPosition: 4.05
   upKey: 119
   downKey: 115
@@ -1185,7 +1185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdec48e2299a91947b80d838fcd32244, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  verticalMovementSpeed: 10
+  verticalMovementSpeed: 6
   maxYPosition: 4.05
   upKey: 273
   downKey: 274
@@ -1601,10 +1601,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1961249277433146678, guid: a1922c8764a8afb49b9ba17a971d0b79, type: 3}
-      propertyPath: movementSpeed
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 3674175986231934677, guid: a1922c8764a8afb49b9ba17a971d0b79, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
